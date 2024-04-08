@@ -41,6 +41,10 @@
 form {
   display: flex;
 }
+.title,
+footer {
+  text-align: center;
+}
 body {
   max-width: 1920px;
   margin: auto;
@@ -117,7 +121,6 @@ body {
   font-size: 14px;
 }
 .title {
-  text-align: center;
   padding-block: 2em;
 }
 .gallery .nav {
@@ -229,6 +232,14 @@ form textarea {
 input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
+}
+footer {
+  background-color: #ee964fde;
+  padding-block: 1.5em;
+  font-size: 18px;
+}
+footer span {
+  text-decoration: underline;
 }
 @media all and (max-width: 1180px) {
   .picture {

@@ -6,8 +6,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
-		content="Site web de Nina Carducci, photographe professionnelle capturant des souvenirs uniques et merveilleux." />
+		content="Site web de Nina Carducci, photographe professionnelle capturant des photos uniques et des souvenirs merveilleux." />
 	<meta name="author" content="Nina Carducci">
+
+	<!--Réseaux sociaux-->
+	<!--Open Graph Meta pour Facebook-->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Nina Carducci-Photographe professionnelle sur Bordeaux">
+	<meta property="og:description"
+		content="Site web de Nina Carducci, photographe professionnelle capturant des photos uniques et des souvenirs merveilleux..">
+	<meta property="og:image" content="https://stephanieet.github.io/ProjetNina/assets/images/nina.avif">
+	<meta property="og:url" content="https://stephanieet.github.io/ProjetNina/">
+	<meta property="og:site_name" content="Nina Carducci">
+	<meta property="og:locale" content="fr_FR">
+
+	<!--Twitter-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="https://stephanieet.github.io/ProjetNina/">
+	<meta name="twitter:title" content="Nina Carducci-Photographe professionnelle sur Bordeaux">
+	<meta name="twitter:description"
+		content="Site web de Nina Carducci, photographe professionnelle capturant des photos uniques et des souvenirs merveilleux.">
+	<meta name="twitter:image" content="https://stephanieet.github.io/ProjetNina/assets/images/nina.avif">
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +38,43 @@
 	<script loading="lazy" src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Photographer",
+			"name": "Nina Carducci",
+			"url": "https://stephanieet.github.io/ProjetNina/",
+			"description": "Site web de Nina Carducci, photographe professionnelle capturant des photos uniques et des souvenirs merveilleux.",
+			"image": "./assets/images/nina.avif",
+			"telephone": "05 56 67 78 89",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressCountry": "France"
+			},
+			"sameAs": [
+			"https://www.instagram.com/ninacarducci.photo"
+			],
+			"openingHoursSpecification": [
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+				  "Monday",
+				  "Tuesday",
+				  "Wednesday",
+				  "Thursday",
+				  "Friday"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			  },
+			]
+		  }
+		  </script>
 </head>
 
 <body>
@@ -206,7 +261,16 @@
 			</div>
 		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<div>
+			<address>
+				68 avenue Alsace-Lorraine <br>
+				33200 Bordeaux
+			</address>
+			<p><span>Téléphone</span>: 05 56 67 78 89 </p>
+			<p><span>Horaires d'ouverture</span>: Du lundi au vendredi de 10h à 19h</p>
+		</div>
+	</footer>
 </body>
 
 </html>
