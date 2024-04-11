@@ -246,10 +246,16 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 footer {
-  background-color: #ee964fde;
+  background-color: black;
   text-align: center;
   padding-block: 1.5em;
   font-size: 18px;
+}
+footer address {
+  color: white;
+}
+footer p {
+  color: white;
 }
 footer span {
   text-decoration: underline;
